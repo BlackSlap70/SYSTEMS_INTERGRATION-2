@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For the Real Foundation - Systems Integration</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #228B22;
+            border: 5px solid #FFD700;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header Section */
+        h1 {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 0;
+            background-color: #228B22;
+        }
+
+        .header-left {
+            width: 60%;                    /* Changed from 50% to 60% */
+            display: flex;
+            flex-direction: column;        /* Changed to column to stack image and text */
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header-left img {
+            width: 100%;
+            height: auto;
+            max-width: 420px;              /* Increased from 350px to 420px */
+            object-fit: contain;
+            margin-bottom: -10px;
+        }
+
+        .header-right {
+            width: 40%;                    /* Changed from 50% to 40% */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-title {
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header-hashtag {
+            color: #FFD700;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .header-caption {
+            color: black;
+            font-size: 0.44em;            /* Increased from 0.4em by 10% */
+            max-width: 420px;              /* Same as image max-width */
+            margin-top: 20px;              /* Increased from 15px to add 5px more space */
+            padding: 0 50px 0 50px;        /* Reduced left padding from 20px to 10px */
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        /* Content Sections */
+        p {
+            color: black;                      /* Changed from #FFD700 to black */
+            padding: 5px 10px;
+            margin: 0 0 5px 30px;          /* Changed from 0 to 30px left margin */
+        }
+
+        /* Video Section */
+        #myVideo {
+            width: 100vw;
+            height: 350px;
+            display: block;
+            object-fit: cover;
+            margin: 5px 0 0 0;
+            padding: 0;
+            border: 2px solid #FFD700;
+        }
+
+        /* Image and Founder Section */
+        .image-section {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            object-fit: contain;
+            display: block;
+            border: 2px solid #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .image-text {
+            max-width: 400px;
+        }
+
+        .image-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .founder-label {
+            color: black;
+        }
+
+        .founder-name {
+            color: #FFD700;
+        }
+
+        .image-description {
+            color: black;
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>
+            <div class="header-left">
+                <img src="../Systems_Image/pexels-photo-3184438.jpeg" alt="For the Real Foundation Header Image">
+                <div class="header-text">
+                    <p class="header-caption">Welcome to For the Real Foundation - Empowering communities through education and advocacy.</p>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="header-title">For the Real Foundation</div>
+                <div class="header-hashtag">#FORTHEREAL</div>
+            </div>
+        </h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Video Section -->
+        <video id="myVideo" loop onclick="this.play()" aria-label="Foundation promotional video">
+            <source src="../Systems_MP4/13676485_3840_2160_30fps.mp4" type="video/mp4">
+            <source src="../Systems_MP4/your-video-filename.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Founder Section -->
+        <section class="image-section">
+            <img src="../Systems_Image/new_filename.jpg" alt="Elijah Stroman, Founder" class="content-image">
+            <div class="image-text">
+                <h3 class="image-name">
+                    <span class="founder-label">Founder:</span> 
+                    <span class="founder-name">Elijah Stroman</span>
+                </h3>
+                <p class="image-description">
+                    Empowering individuals and communities with education, advocacy, and resources for true freedom and equality.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
