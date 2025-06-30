@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #228B22;
+            border: 5px solid #FFD700;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            display: flex;
+            align-items: center;
+            padding: 20px;           /* This creates the space */
+            margin-bottom: 0;        /* Removed all bottom space */
+            background-color: #228B22;
+        }
+
+        .header-left {
+            width: 50%;                 /* Takes 50% of header width */
+            display: flex;
+            justify-content: center;    /* Centers image horizontally */
+            align-items: center;        /* Centers image vertically */
+            padding: 20px;
+        }
+
+        .header-left img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+            object-fit: contain;
+            margin-bottom: -10px;
+        }
+
+        .header-right {
+            width: 50%;                 /* Takes 50% of header width */
+            display: flex;
+            flex-direction: column;     /* Stacks title and hashtag vertically */
+            justify-content: center;    /* Centers text vertically */
+            align-items: center;        /* Centers text horizontally */
+            text-align: center;         /* Centers text within elements */
+        }
+
+        .header-title {
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header-hashtag {
+            color: #FFD700;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        p {
+            color: #FFD700;
+            padding: 5px 10px;       /* Reduced top/bottom padding */
+            margin: 0 0 5px 0;       /* Minimal margins */
+        }
+
+        #myVideo {
+            width: 100vw;
+            height: 350px;
+            display: block;
+            object-fit: cover;
+            margin: 5px 0 0 0;       /* Small top margin only */
+            padding: 0;
+            border: 2px solid #FFD700;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            max-width: 250px;          /* Smaller than before */
+            object-fit: contain;
+            display: block;
+            border: 2px solid #FFD700;
+            margin-bottom: 15px;       /* Space between image and text */
+        }
+
+        .image-section {
+            margin-top: 20px;
+            margin-bottom: 600px;       /* Reduces bottom space by 50% */
+            padding-left: 30px;        /* 30px from left border */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;   /* Aligns everything to left */
+        }
+
+        .image-text {
+            max-width: 400px;          /* Matches image width */
+            color: #FFD700;
+        }
+
+        .image-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .image-description {
+            color: black;               /* Description text in black */
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .founder-label {
+            color: black;               /* "Founder:" in black */
+        }
+
+        .founder-name {
+            color: #FFD700;             /* "Elijah Stroman" in gold */
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    <div class="header-left">
+        
+        <img src="../Systems_Image/pexels-photo-3184438.jpeg" alt="Header Image">
+    </div>
+    
+    <div class="header-right">
+        <div class="header-title">For the Real Foundation</div>
+        <div class="header-hashtag">#FORTHEREAL</div>
+    </div>
+</h1>
+
+<p>This is a paragraph.</p>
+
+<video id="myVideo" loop onclick="this.play()">
+    <source src="13676485_3840_2160_30fps.mp4" type="video/mp4">
+    <source src="your-video-filename.webm" type="video/webm">
+    Your browser does not support the video tag.
+</video>
+
+<div class="image-section">
+    <img src="../Systems_Image/new_filename.jpg" alt="Content Image" class="content-image">
+    <div class="image-text">
+        <h3 class="image-name">
+            <span class="founder-label">Founder:</span> 
+            <span class="founder-name">Elijah Stroman</span>
+        </h3>
+        <p class="image-description">
+            Empowering individuals and communities with education, advocacy, and resources for true freedom and equality.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

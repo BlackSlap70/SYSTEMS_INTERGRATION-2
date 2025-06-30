@@ -1,0 +1,5 @@
+# See what files you have
+ls
+
+# Check if git is set up
+git status
