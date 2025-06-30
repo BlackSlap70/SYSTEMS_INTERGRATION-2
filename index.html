@@ -94,18 +94,18 @@
         .header-text {
             max-width: 420px;
             margin-top: 20px;
-            padding-left: 0;               /* Remove any padding - let it align naturally */
+            padding-left: 0;
         }
 
         .header-caption {
             color: black;
             font-size: 0.44em;
             max-width: 420px;
-            margin-top: 0;                 /* Remove top margin */
-            padding: 0;                    /* Remove all padding - align like .image-description */
+            margin-top: 20px;
+            padding: 0 50px 0 50px;        /* Add padding to match repository version */
             text-align: left;
             line-height: 1.4;
-            margin: 0;                     /* Same as .image-description */
+            margin: 0;
         }
 
         .header-right {
@@ -347,14 +347,12 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Video Section - TEMPORARILY DISABLED -->
-        <!-- 
-        <video id="myVideo" loop onclick="this.play()" aria-label="Foundation promotional video" controls>
+        <!-- Video Section -->
+        <video id="myVideo" loop onclick="this.play()" aria-label="Foundation promotional video">
             <source src="Systems_MP4/BKGRDVDO.mp4" type="video/mp4">
-            <source src="../Systems_MP4/your-video-filename.webm" type="video/webm">
+            <source src="Systems_MP4/your-video-filename.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
-        -->
 
         <!-- Founder Section -->
         <section class="image-section">
