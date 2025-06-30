@@ -1,0 +1,206 @@
+
+/* 1. Body: sets the background for the whole page */
+/* 1. Body: sets the background for the whole page */
+body {
+  background: #1a7f37; /* Money green */
+  margin: 0;
+  padding: 0;
+}
+/* Header Flex Layout */
+header {
+  border: 5px solid #ffd700; /* Gold trim */
+  border-radius: 10px;       /* Optional: rounded corners */
+  box-sizing: border-box;
+}
+
+/* Header Flex Layout */
+.header-flex {
+  display: flex;
+  width: 100%;
+  height: 180px; /* Adjust as needed for your design */
+}
+
+/* Header containers: each takes 50% and centers content */
+.header-img-container,
+.header-text-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header image container: align image to left with padding */
+.header-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px; /* 60px from the left */
+  margin: 0;
+  background: #1a7f37; /* Money green */
+}
+
+/* Header text container: align text to left with padding */
+.header-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* Text to the right */
+  padding-right: 20px;         /* Optional: space from edge */
+  margin: 0;
+}
+
+/* Header image styling */
+.header-img {
+  width: 160px;   /* Adjust as needed */
+  height: 160px;  /* Adjust as needed */
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+/* Header text centering */
+.header-text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hashtag styling */
+.header-hashtag {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffd700;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Content image styling */
+.content-img {
+  display: block;
+  margin: 30px auto;
+  max-width: 50%;
+  height: 55px;
+}
+
+/* Video styles */
+video {
+  display: block;
+  width: 100vw;
+  height: 45vh;
+  max-width: 100vw;
+  max-height: 45vh;
+  margin: 0;
+  object-fit: cover;
+  background: #000;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: width 0.3s, height 0.3s;
+}
+
+/* Content section styles */
+.content-section {
+  border: 5px solid #ffd700;
+  border-radius: 0;
+  background: #1a7f37;
+  margin: 0;
+  width: 100vw;
+  max-width: 100vw;
+  box-shadow: 0 0 10px #ffd700;
+  text-align: center;
+  min-height: 200px;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+/* Header Flex Layout */
+.header-flex {
+  display: flex;
+  width: 100%;
+  height: 180px; /* Adjust as needed for your design */
+}
+
+/* Header containers: each takes 50% and centers content */
+.header-img-container,
+.header-text-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header image container: align image to left with padding */
+.header-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 600px; /* 600px from the left */
+  margin: 0;
+}
+
+/* Header text container: align text to left with padding */
+.header-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* Text to the right */
+  padding-right: 20px;         /* Optional: space from edge */
+}
+
+/* Header image styling */
+.header-img {
+  width: 100px;   /* Adjust as needed */
+  height: 100px;  /* Adjust as needed */
+  object-fit: contain;
+  display: block;
+}
+
+/* Hashtag styling */
+.header-hashtag {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffd700;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Content image styling */
+.content-img {
+  display: block;
+  margin: 30px auto;
+  max-width: 50%;
+  height: 55px;
+}
+
+/* Video styles */
+video {
+  display: block;
+  width: 100vw;
+  height: 45vh;
+  max-width: 100vw;
+  max-height: 45vh;
+  margin: 0;
+  object-fit: cover;
+  background: #000;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: width 0.3s, height 0.3s;
+}
+
+/* Content section styles */
+.content-section {
+  border: 5px solid #ffd700;
+  border-radius: 0;
+  background: #1a7f37;
+  margin: 0;
+  width: 100vw;
+  max-width: 100vw;
+  box-shadow: 0 0 10px #ffd700;
+  text-align: center;
+  min-height: 200px;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
